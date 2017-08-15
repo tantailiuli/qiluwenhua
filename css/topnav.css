@@ -1,0 +1,166 @@
+.topbar{
+	height: 70px;
+	background: url(../images/topbar.png) no-repeat top center;
+}
+.nav_box{
+	position: relative;
+}
+.nav_box .navbar-toggle{
+	border: 1px solid #bf1a20;
+}
+.nav_box .navbar-toggle .icon-bar{
+	background-color: #bf1a20;
+}
+.nav_box .logo{
+	float: left;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+.nav_box ul{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding-top: 70px;
+	display: block;
+}
+.nav_box ul li{
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.nav_box ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+@media screen and (min-width: 768px){
+	.nav_box ul li a span{
+		display: none;
+	}
+	.nav_box ul li:nth-child(1),
+	.nav_box ul li:nth-child(2),
+	.nav_box ul li:nth-child(3){
+		float: left;
+	}
+	.nav_box ul li:nth-child(4),
+	.nav_box ul li:nth-child(5),
+	.nav_box ul li:nth-child(6){
+		float: right;
+	}
+	.nav_box ul li:nth-child(1){
+		width: 75px;
+		height: 40px;
+		background-image: url(../images/nav01.png);
+	}
+	.nav_box ul li.active:nth-child(1){
+		background-image: url(../images/nav01_.png);
+	}
+	.nav_box ul li:nth-child(2){
+		width: 126px;
+		height: 40px;
+		background-image: url(../images/nav02.png);
+	}
+	.nav_box ul li.active:nth-child(2){
+		background-image: url(../images/nav02_.png);
+	}
+	.nav_box ul li:nth-child(3){
+		width: 129px;
+		height: 42px;
+		background-image: url(../images/nav03.png);
+	}
+	.nav_box ul li.active:nth-child(3){
+		background-image: url(../images/nav03_.png);
+	}
+	.nav_box ul li:nth-child(6){
+		width: 131px;
+		height: 40px;
+		background-image: url(../images/nav04.png);	
+	}
+	.nav_box ul li.active:nth-child(6){
+		background-image: url(../images/nav04_.png);
+	}
+	.nav_box ul li:nth-child(5){
+		width: 124px;
+		height: 43px;
+		background-image: url(../images/nav05.png);
+	}
+	.nav_box ul li.active:nth-child(5){
+		background-image: url(../images/nav05_.png);
+	}
+	.nav_box ul li:nth-child(4){
+		width: 108px;
+		height: 42px;
+		background-image: url(../images/nav06.png);
+	}
+	.nav_box ul li.active:nth-child(4){
+		background-image: url(../images/nav06_.png);
+	}
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+	.nav_box ul{
+		padding: 0 20px;
+	}
+	.nav_box ul li:nth-child(1),
+	.nav_box ul li:nth-child(2),
+	.nav_box ul li:nth-child(3),
+	.nav_box ul li:nth-child(4),
+	.nav_box ul li:nth-child(5),
+	.nav_box ul li:nth-child(6){
+		width: 50%;
+		margin:10px 0;
+	}
+}
+@media screen and (max-width: 1229px) and (min-width: 992px){
+	.nav_box ul{
+		padding: 70px 20px 0;
+	}
+}
+@media screen and (min-width: 1230px){
+	.nav_box ul li:nth-child(1){
+		margin:0 5.69% 0 4.87%;
+	}
+	.nav_box ul li:nth-child(2){
+		margin-right: 3.55%;
+	}
+	.nav_box ul li:nth-child(5){
+		margin-left: 2.11%;
+	}
+	.nav_box ul li:nth-child(4){
+		margin: 0 6.42% 0 2.43%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.nav_box .logo{
+		width: 20%;
+	}
+	.nav_box ul{
+		top: 100%;
+		z-index: 2;
+		padding: 0;
+		display: none;
+	}
+	.nav_box ul li{
+		float: left;
+		width: 100%;
+		height: 35px;
+	}
+	.nav_box ul li a{
+		float: left;
+		height: 100%;
+		width: 100%;
+		line-height: 35px;
+		background-color: #fff;
+		color: #bf1a20;
+		padding-left: 30px;
+		border-bottom: 1px solid #ddd;
+	}
+	.nav_box ul li.active a,
+	.nav_box ul li:hover a{
+		background-color: #bf1a20;
+		color: #fff;
+	}
+}

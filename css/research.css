@@ -1,0 +1,6 @@
+.content{
+	position: relative;
+}
+.content .title{
+	position: absolute;
+}

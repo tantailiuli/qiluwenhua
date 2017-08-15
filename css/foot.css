@@ -1,0 +1,70 @@
+.foot_box{
+	background-color: #871f29;
+	color: #fefefe;
+	padding: 48px 0 74px;
+}
+.foot_box .foot{
+	padding: 0 15px;
+}
+.foot_box .foot .link{
+	text-align: center;
+	padding-bottom: 35px;
+}
+.foot_box .foot .link a,
+.foot_box .foot .link span{
+	color: #fefefe;
+	font-size: 18px;
+	line-height: 22px;
+	word-break: normal;
+	display: inline-block;
+	font-family: "huawenkaiti";
+}
+.foot_box .foot .link span{
+	margin: 0 32px;
+}
+.foot_box .foot .link a:hover{
+	text-decoration: underline;
+}
+.foot_box .foot p.address,
+.foot_box .foot p.call{
+	text-align: center;
+	color: #fefefe;
+	line-height: 22px;
+	font-size: 18px;
+	margin: 10px 0;
+	font-family: "huawenkaiti";
+}
+.foot_box .foot p.copy{
+	font-size: 12px;
+	text-align: center;
+	line-height: 16px;
+	margin-top: 50px;
+}
+@media screen and (max-width: 991px) and (min-width: 480px) {
+	.foot_box .foot .link a{
+		float: left;
+		width: 30%;
+		text-align: center;
+	}
+	.foot_box .foot .link span{
+		float: left;
+		margin: 0;
+	}
+	.foot_box .foot .link span:nth-of-type(3){
+		display: none;
+	}
+}
+@media screen and (max-width: 479px) {
+	.foot_box .foot .link a{
+		float: left;
+		width: 45%;
+		text-align: center;
+	}
+	.foot_box .foot .link span{
+		float: left;
+		margin: 0;
+	}
+	.foot_box .foot .link span:nth-of-type(2n){
+		display: none;
+	}
+}
