@@ -12,6 +12,7 @@ h6,
 li{
 	margin: 0;
 	padding: 0;
+	font-family: Microsoft YaHei;
 }
 a,
 a:hover,
@@ -47,4 +48,12 @@ body{
 @font-face{
 	font-family: "huawenkaiti";
 	src:url("../fonts/huawenkaiti.ttf");
+}
+@font-face{
+	font-family: "huawensongti";
+	src:url("../fonts/huawensongti.ttf");
+}
+@font-face{
+	font-family: "SimSun-ExtB";
+	src:url("../fonts/SimSun-ExtB.ttf");
 }
