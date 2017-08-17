@@ -6,6 +6,13 @@ $(document).ready(function(){
 				e.preventDefault();
 			});
 		})
+	}else{
+		$(".content .right .cnt i.fsbtn").each(function(){
+			$(this).click(function(e){
+				$(this).parent().toggleClass("asFullScreen");
+				e.preventDefault();
+			});
+		})
 	}
 	$(".content .sel ul li").eq(0).addClass("active");
 	$(".content .right .cnt ul li").eq(0).show();
