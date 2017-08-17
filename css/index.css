@@ -297,8 +297,8 @@
 	.itemstylea .cnt ul{
 		padding: 60px;
 	}
-	.item .cnt.fullScreen,
-	.item .cnt.asFullScreen{
+	.itemstylea .cnt.fullScreen,
+	.itemstylea .cnt.asFullScreen{
 		padding: 0;
 	}
 }
