@@ -202,7 +202,7 @@
 	float: left;
 	width: 100%;
 	margin-top: 20px;
-	height: 470px;
+	box-shadow: 0 0 6px #333;
 }
 .content .right .animation li{
 	float: left;
@@ -213,7 +213,6 @@
 .content .right .animation li video{
 	float: left;
 	width: 100%;
-	box-shadow: 0 0 6px #333;
 }
 .content .right .friendcircle{
 	float: left;
