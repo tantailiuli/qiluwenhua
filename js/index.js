@@ -1,5 +1,4 @@
 $(document).ready(function(){
-//全屏
 	if($.support.fullscreen){
 		$(".itemstylea .inr .cnt i.fsbtn").each(function(){
 			$(this).click(function(e){
@@ -7,8 +6,14 @@ $(document).ready(function(){
 				e.preventDefault();
 			});
 		})
+	}else{
+		$(".itemstylea .inr .cnt i.fsbtn").each(function(){
+			$(this).click(function(e){
+				$(this).parent().toggleClass("asFullScreen");
+				e.preventDefault();
+			});
+		})
 	}
-//选项卡
 	$(".item .inr .sel").each(function(){
 		var $this = $(this);
 		$this.find("ul li").eq(0).addClass("active");

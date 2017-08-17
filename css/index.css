@@ -117,6 +117,18 @@
 	margin-top: 0;
 	padding: 20px 200px;
 }
+.itemstylea .cnt.asFullScreen{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 20px 200px;
+}
 .itemstylea .cnt i.fsbtn{
 	position: absolute;
 	left: 10px;
@@ -126,7 +138,8 @@
 	background: url(../images/fullscreen.png) no-repeat center;
 	cursor: pointer;
 }
-.itemstylea .cnt.fullScreen i.fsbtn{
+.itemstylea .cnt.fullScreen i.fsbtn,
+.itemstylea .cnt.asFullScreen i.fsbtn{
 	left: auto;
 	right: 20px;
 	bottom: 20px;
@@ -281,6 +294,13 @@
 	.item .cnt{
 		height: 320px;
 	}
+	.itemstylea .cnt ul{
+		padding: 60px;
+	}
+	.item .cnt.fullScreen,
+	.item .cnt.asFullScreen{
+		padding: 0;
+	}
 }
 @media screen and (max-width: 991px) {
 	.item .inr{
@@ -299,6 +319,9 @@
 		line-height: 60px;
 		font-size: 26px; 
 	}
+	.itemstylea .cnt ul{
+		padding: 30px;
+	}
 }
 @media screen and (max-width: 767px) {
 	.item .sel ul li{
@@ -313,6 +336,9 @@
 	.item.itemstylec .proposal p{
 		line-height: 40px;
 		font-size: 20px; 
+	}
+	.itemstylea .cnt ul{
+		padding: 20px;
 	}
 }
 @media screen and (max-width: 479px) {
@@ -331,5 +357,8 @@
 	.item.itemstylec .proposal{
 		height: 260px!important;
 		background-size: auto 260px!important;
+	}
+	.itemstylea .cnt ul{
+		padding: 10px;
 	}
 }
