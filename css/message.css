@@ -8,12 +8,12 @@
 	color:#bf1a20;
 	margin: 55px 0 40px;
 }
-.message ul{
+.message ul.cnt{
 	float: left;
 	width: 100%;
 	padding: 0 20px;
 }
-.message ul li{
+.message ul.cnt li{
 	float: left;
 	width: 100%;
 	height: 100%;
@@ -21,9 +21,121 @@
 	padding: 0 40px 20px;
 	background-color: #eee;
 }
-.message ul li h3{
+.message ul.cnt li h3{
+	float: left;
+	width: 100%;
 	font-size: 30px;
 	height: 72px;
 	line-height: 70px;
 	border-bottom: 2px solid #ccc;
+}
+.message ul.cnt li div{
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 7px 0;
+	min-height: 180px;
+}
+.message ul.cnt li div span.time{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 16px;
+}
+.message ul.cnt li div p{
+	line-height: 38px;
+	font-size: 16px;
+	color: #666;
+}
+.pagination{
+	float: right;
+	margin:0 20px 100px 0;
+}
+.pagination li a{
+	margin: 0 5px;
+	color: #666;
+	border-color: #bf1a20;
+}
+.pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a,
+.pagination>li:last-child>span{
+	border-radius: 0;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color: #bf1a20;
+    border-color: #bf1a20;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus{
+	background-color: #bf1a20;
+	border-color: #bf1a20;
+	color: #fff;
+}
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus{
+	border-color: #bf1a20;
+}
+@media screen and (max-width: 991px) {
+	.message h3.title{
+		font-size: 44px;
+		margin: 45px 0 30px;
+	}
+	.message ul.cnt li{
+		padding: 0 30px 20px;
+	}
+	.message ul.cnt li h3{
+		font-size: 28px;
+		height: 62px;
+		line-height: 60px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.message h3.title{
+		font-size: 40px;
+		margin: 35px 0 20px;
+	}
+	.message{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.message ul.cnt{
+		padding: 0 15px;
+	}
+	.message ul.cnt li{
+		margin: 15px 0;
+		padding: 0 20px 15px;
+	}
+	.message ul.cnt li h3{
+		font-size: 24px;
+		height: 52px;
+		line-height: 50px;
+	}
+	.pagination{
+		margin: 0 0 50px;
+	}
+	.pagination li a{
+		padding: 3px 6px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.message h3.title{
+		font-size: 38px;
+		margin: 30px 0 15px;
+	}
+	.message ul.cnt{
+		padding: 0 10px;
+	}
+	.message ul.cnt li{
+		padding: 0 15px 10px;
+	}
+	.message ul.cnt li h3{
+		font-size: 20px;
+		height: 42px;
+		line-height: 40px;
+	}
+	.message ul.cnt li div p{
+		font-size: 14px;
+		line-height: 32px;
+	}
 }
